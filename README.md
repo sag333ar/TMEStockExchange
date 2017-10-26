@@ -4,11 +4,9 @@ Stock Exchange Sample Project
 
 ### Screenshots
 
-| Title | Screenshot |
-|-------|------------|
-| Launch| ![Image1](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/LaunchApp.gif)|
-| Details page| ![Image1](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/LaunchApp.gif)|
-| Viability| ![Image1](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/Viability.gif)|
+| Launch | Details Page | Viability |
+|--------|--------------|-----------|
+|![Image1](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/LaunchApp.gif)| ![Image2](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/LaunchApp.gif)| ![Image3](https://raw.githubusercontent.com/sag333ar/TMEStockExchange/master/Screenshots/Viability.gif)|
 
 
 ### Architectures & Design Patterns
