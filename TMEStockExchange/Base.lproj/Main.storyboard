@@ -127,26 +127,52 @@
             <objects>
                 <viewController id="kar-O4-dCT" customClass="StockDetailView" customModule="TMEStockExchange" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXQ-9H-hg7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYD-GS-XOg">
+                                <rect key="frame" x="125" y="0.0" width="125" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Obn-HX-5Ua"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Chart"/>
+                                    <segment title="Viability"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="kar-O4-dCT" eventType="valueChanged" id="xdH-IV-9eb"/>
+                                </connections>
+                            </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-mB-CiF" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="467"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlx-Xk-Jpp">
-                                <rect key="frame" x="0.0" y="531" width="375" height="136"/>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlx-Xk-Jpp">
+                                <rect key="frame" x="0.0" y="30" width="375" height="573"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Y2D-O8-vFs" customClass="StockDetailCell" customModule="TMEStockExchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="75" id="Y2D-O8-vFs" customClass="StockDetailCell" customModule="TMEStockExchange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y2D-O8-vFs" id="dzY-8s-mB0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-Kq-FZC">
-                                                    <rect key="frame" x="5" y="5" width="365" height="33.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-Kq-FZC">
+                                                    <rect key="frame" x="5" y="5" width="365" height="65"/>
+                                                    <string key="text">Channel Partnering Team
+CRM
+Enterprise</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-qo-qCK">
+                                                    <rect key="frame" x="0.0" y="74" width="375" height="1"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ZMg-6K-z4j"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -157,6 +183,9 @@
                                                 <constraint firstItem="z8c-Kq-FZC" firstAttribute="top" secondItem="dzY-8s-mB0" secondAttribute="top" constant="5" id="Je7-mF-Gbj"/>
                                                 <constraint firstItem="z8c-Kq-FZC" firstAttribute="leading" secondItem="dzY-8s-mB0" secondAttribute="leading" constant="5" id="WL2-In-cfD"/>
                                                 <constraint firstAttribute="trailing" secondItem="z8c-Kq-FZC" secondAttribute="trailing" constant="5" id="pbJ-GT-Pua"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZDP-qo-qCK" secondAttribute="bottom" id="sv6-zH-qtp"/>
+                                                <constraint firstItem="ZDP-qo-qCK" firstAttribute="leading" secondItem="dzY-8s-mB0" secondAttribute="leading" id="v51-i0-XMM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZDP-qo-qCK" secondAttribute="trailing" id="wn5-6z-bQP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -168,19 +197,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="trailing" secondItem="Y5Q-Dq-Q8o" secondAttribute="trailing" id="71w-3c-clg"/>
-                            <constraint firstItem="xbh-mB-CiF" firstAttribute="height" secondItem="TXQ-9H-hg7" secondAttribute="height" multiplier="0.7" id="Vhh-6f-jrz"/>
-                            <constraint firstItem="xbh-mB-CiF" firstAttribute="top" secondItem="Y5Q-Dq-Q8o" secondAttribute="top" id="XrR-B6-gx4"/>
-                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="top" secondItem="xbh-mB-CiF" secondAttribute="bottom" id="YVd-k4-RaF"/>
-                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="leading" secondItem="Y5Q-Dq-Q8o" secondAttribute="leading" id="ajm-5i-xDZ"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="leading" secondItem="Y5Q-Dq-Q8o" secondAttribute="leading" id="0hd-IX-WAR"/>
+                            <constraint firstAttribute="bottom" secondItem="xbh-mB-CiF" secondAttribute="bottom" id="0p3-eZ-NWd"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="top" secondItem="qYD-GS-XOg" secondAttribute="bottom" constant="2" id="91B-bm-5g1"/>
+                            <constraint firstItem="xbh-mB-CiF" firstAttribute="top" secondItem="qYD-GS-XOg" secondAttribute="bottom" id="D2K-ci-3lz"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="trailing" secondItem="Y5Q-Dq-Q8o" secondAttribute="trailing" id="Skd-TP-uPT"/>
                             <constraint firstItem="xbh-mB-CiF" firstAttribute="trailing" secondItem="Y5Q-Dq-Q8o" secondAttribute="trailing" id="ebP-Nb-d21"/>
-                            <constraint firstItem="Y5Q-Dq-Q8o" firstAttribute="bottom" secondItem="xlx-Xk-Jpp" secondAttribute="bottom" id="rxn-mo-yRo"/>
+                            <constraint firstItem="qYD-GS-XOg" firstAttribute="centerX" secondItem="Y5Q-Dq-Q8o" secondAttribute="centerX" id="hxm-an-I5p"/>
+                            <constraint firstItem="qYD-GS-XOg" firstAttribute="top" secondItem="Y5Q-Dq-Q8o" secondAttribute="top" id="qty-2f-wmp"/>
                             <constraint firstItem="xbh-mB-CiF" firstAttribute="leading" secondItem="Y5Q-Dq-Q8o" secondAttribute="leading" id="yaH-4o-72g"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="bottom" secondItem="Y5Q-Dq-Q8o" secondAttribute="bottom" id="zFv-1U-ovQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y5Q-Dq-Q8o"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="barChartView" destination="xbh-mB-CiF" id="onu-gT-bA2"/>
+                        <outlet property="stockProfitTableView" destination="xlx-Xk-Jpp" id="lKS-QU-Odz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJH-dY-IQT" userLabel="First Responder" sceneMemberID="firstResponder"/>

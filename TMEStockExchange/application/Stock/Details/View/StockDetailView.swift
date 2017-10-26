@@ -119,3 +119,21 @@ extension StockDetailView {
 
 }
 
+// MARK:- Extension for user actions
+extension StockDetailView {
+
+  @IBAction func segmentChanged(_ segmentControl: UISegmentedControl) {
+    presenter.userChangedSegmentToIndex(segmentControl.selectedSegmentIndex)
+  }
+
+  func showChartView() {
+    stockProfitTableView.isHidden = true
+    barChartView.isHidden = false
+  }
+
+  func showTableView() {
+    stockProfitTableView.isHidden = false
+    barChartView.isHidden = true
+  }
+
+}

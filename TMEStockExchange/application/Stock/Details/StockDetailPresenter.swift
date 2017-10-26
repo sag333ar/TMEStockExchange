@@ -30,4 +30,15 @@ class StockDetailPresenter: NSObject {
     view.updateChart(chartData, xAxisData: xAxisData, profitInfo: profitInfo)
   }
 
+  func userChangedSegmentToIndex(_ index: Int) {
+    switch index {
+    case 0:
+      view.showChartView()
+    case 1:
+      view.showTableView()
+    default:
+      view.showChartView()
+    }
+  }
+
 }

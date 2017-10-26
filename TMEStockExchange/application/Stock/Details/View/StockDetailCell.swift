@@ -23,7 +23,7 @@ class StockDetailCell: UITableViewCell {
   func configureCell(with stockProfit: StockProfit, dateFormatter: DateFormatter) {
     let buyDate = dateFormatter.string(from: stockProfit.buyDate)
     let sellDate = dateFormatter.string(from: stockProfit.sellDate)
-    titleLabel.text = "Profit: \(stockProfit.profit). Bought @ \(stockProfit.buyPrice) on \(buyDate)." +
+    titleLabel.text = "Profit: \(stockProfit.profit)\nBought @ \(stockProfit.buyPrice) on \(buyDate)\n" +
       "Sold @ \(stockProfit.sellPrice) on \(sellDate)"
   }
 
