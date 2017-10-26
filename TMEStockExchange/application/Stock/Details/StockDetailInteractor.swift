@@ -20,12 +20,13 @@ class StockDetailInteractor: NSObject {
       let dateFormatter = DateFormatter()
       dateFormatter.dateFormat = "dd MMM"
       for i in 0..<stock.prices.count {
-        let dataEntry = BarChartDataEntry(x: Double(i), yValues: [Double(stock.prices[i].price)])
+        let yValue = stock.prices[i].price * 100 / 1000
+        let dataEntry = BarChartDataEntry(x: Double(i), yValues: [Double(yValue)])
         dataEntries.append(dataEntry)
         let dateEntry = dateFormatter.string(from: stock.prices[i].date)
         dateEntries.append(dateEntry)
       }
-      let chartDataSet = BarChartDataSet(values: dataEntries, label: "Price")
+      let chartDataSet = BarChartDataSet(values: dataEntries, label: "Price in %")
       let chartColorsData = self.chartDataColors(stock)
       chartDataSet.colors = chartColorsData.1
       let chartData = BarChartData(dataSet: chartDataSet)
