@@ -35,6 +35,7 @@ class StockListPresenter: NSObject {
 extension StockListPresenter {
 
   func userSelectedFromListFor(_ stock: Stock, view: StockListView) {
+    router.userSelectedFromListFor(stock, view: view)
   }
 
   func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -129,13 +129,63 @@
                     <view key="view" contentMode="scaleToFill" id="TXQ-9H-hg7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-mB-CiF" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlx-Xk-Jpp">
+                                <rect key="frame" x="0.0" y="531" width="375" height="136"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Y2D-O8-vFs" customClass="StockDetailCell" customModule="TMEStockExchange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y2D-O8-vFs" id="dzY-8s-mB0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-Kq-FZC">
+                                                    <rect key="frame" x="5" y="5" width="365" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="z8c-Kq-FZC" secondAttribute="bottom" constant="5" id="19x-xr-nIT"/>
+                                                <constraint firstItem="z8c-Kq-FZC" firstAttribute="top" secondItem="dzY-8s-mB0" secondAttribute="top" constant="5" id="Je7-mF-Gbj"/>
+                                                <constraint firstItem="z8c-Kq-FZC" firstAttribute="leading" secondItem="dzY-8s-mB0" secondAttribute="leading" constant="5" id="WL2-In-cfD"/>
+                                                <constraint firstAttribute="trailing" secondItem="z8c-Kq-FZC" secondAttribute="trailing" constant="5" id="pbJ-GT-Pua"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="z8c-Kq-FZC" id="nvx-qj-F1e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="trailing" secondItem="Y5Q-Dq-Q8o" secondAttribute="trailing" id="71w-3c-clg"/>
+                            <constraint firstItem="xbh-mB-CiF" firstAttribute="height" secondItem="TXQ-9H-hg7" secondAttribute="height" multiplier="0.7" id="Vhh-6f-jrz"/>
+                            <constraint firstItem="xbh-mB-CiF" firstAttribute="top" secondItem="Y5Q-Dq-Q8o" secondAttribute="top" id="XrR-B6-gx4"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="top" secondItem="xbh-mB-CiF" secondAttribute="bottom" id="YVd-k4-RaF"/>
+                            <constraint firstItem="xlx-Xk-Jpp" firstAttribute="leading" secondItem="Y5Q-Dq-Q8o" secondAttribute="leading" id="ajm-5i-xDZ"/>
+                            <constraint firstItem="xbh-mB-CiF" firstAttribute="trailing" secondItem="Y5Q-Dq-Q8o" secondAttribute="trailing" id="ebP-Nb-d21"/>
+                            <constraint firstItem="Y5Q-Dq-Q8o" firstAttribute="bottom" secondItem="xlx-Xk-Jpp" secondAttribute="bottom" id="rxn-mo-yRo"/>
+                            <constraint firstItem="xbh-mB-CiF" firstAttribute="leading" secondItem="Y5Q-Dq-Q8o" secondAttribute="leading" id="yaH-4o-72g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y5Q-Dq-Q8o"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="xbh-mB-CiF" id="onu-gT-bA2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJH-dY-IQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="118"/>
+            <point key="canvasLocation" x="884" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

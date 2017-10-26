@@ -86,12 +86,12 @@ extension StockListView {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    self.title = "Stock Exchage"
+    title = "Stock Exchange"
   }
 
   override func viewDidDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    self.title = ""
+    title = ""
   }
 
   override func didReceiveMemoryWarning() {
@@ -112,7 +112,7 @@ extension StockListView {
   }
 
   func userSelectedFromListFor(_ stock: Stock) {
-
+    presenter.userSelectedFromListFor(stock, view: self)
   }
 
 }

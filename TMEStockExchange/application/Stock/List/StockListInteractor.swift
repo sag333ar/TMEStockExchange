@@ -13,7 +13,7 @@ class StockListInteractor: NSObject {
   weak var presenter: StockListPresenter!
 
   func fetchStockData(_ handler: @escaping (([Stock]) -> Void)) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
       let stocks = StockManagerSDK.stockData()
       handler(stocks)
     }

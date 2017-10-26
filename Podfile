@@ -7,6 +7,7 @@ target 'TMEStockExchange' do
   pod 'MBProgressHUD'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Charts'
 
   # Pods for TMEStockExchange
 

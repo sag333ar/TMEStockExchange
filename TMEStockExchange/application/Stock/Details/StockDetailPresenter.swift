@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 
 class StockDetailPresenter: NSObject {
   weak var view: StockDetailView!
@@ -14,6 +15,19 @@ class StockDetailPresenter: NSObject {
   var router: StockDetailRouter!
 
   func onViewLoad() {
+    view.bindTableViewDataSourceDelegate()
+    view.reloadTableView()
+    generateChartData(view.stock)
+  }
+
+  func generateChartData(_ stock: Stock) {
+    view.showProgressHUD()
+    interactor.generateChartData(stock, handler: chartDataReceived)
+  }
+
+  func chartDataReceived(_ chartData: ChartData, xAxisData: [String], profitInfo: [StockProfit]) {
+    view.hideProgressHUD()
+    view.updateChart(chartData, xAxisData: xAxisData, profitInfo: profitInfo)
   }
 
 }
