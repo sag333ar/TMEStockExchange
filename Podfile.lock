@@ -1,0 +1,19 @@
+PODS:
+  - Crashlytics (3.9.0):
+    - Fabric (~> 1.7.0)
+  - Fabric (1.7.0)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
+  Fabric: e6be012366472553807dada21243c5ab8d904151
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: d2c1b3eab80b9c77a6de160268ca3aafbdf6356e
+
+COCOAPODS: 1.1.1

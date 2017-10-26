@@ -1,13 +1,15 @@
 //
-//  StockDetailInteractor.swift
+//  Stock.swift
 //  TMEStockExchange
 //
 //  Created by sagar kothari on 26/10/17.
 //  Copyright © 2017 sagar kothari. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class StockDetailInteractor: NSObject {
-  weak var presenter: StockDetailPresenter!
+struct Stock {
+  let name: String
+  let abv: String
+  var prices: [StockPrice] = []
 }

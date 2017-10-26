@@ -10,4 +10,18 @@ import UIKit
 
 class StockListRouter: NSObject {
 
+  func userSelectedFromListFor(_ stock: Stock, view: StockListView) {
+    view.performSegue(withIdentifier: "showDetails", sender: stock)
+  }
+
+}
+
+extension StockListRouter {
+
+  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "showDetails", let view = segue.destination as? StockDetailView {
+
+    }
+  }
+
 }

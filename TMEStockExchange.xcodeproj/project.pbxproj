@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD91C841FA1D88200C3FD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91C821FA1D88200C3FD8F /* Main.storyboard */; };
+		1BD91C861FA1D88200C3FD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91C851FA1D88200C3FD8F /* Assets.xcassets */; };
+		1BD91C891FA1D88200C3FD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91C871FA1D88200C3FD8F /* LaunchScreen.storyboard */; };
+		1BD91C941FA1D88300C3FD8F /* TMEStockExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91C931FA1D88300C3FD8F /* TMEStockExchangeTests.swift */; };
+		1BD91C9F1FA1D88300C3FD8F /* TMEStockExchangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91C9E1FA1D88300C3FD8F /* TMEStockExchangeUITests.swift */; };
+		1BD91CBD1FA1DB0300C3FD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CAD1FA1DB0300C3FD8F /* AppDelegate.swift */; };
+		1BD91CBF1FA1DB0300C3FD8F /* StockManagerSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB01FA1DB0300C3FD8F /* StockManagerSDK.swift */; };
+		1BD91CC01FA1DB0300C3FD8F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB21FA1DB0300C3FD8F /* Stock.swift */; };
+		1BD91CC11FA1DB0300C3FD8F /* StockPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB31FA1DB0300C3FD8F /* StockPrice.swift */; };
+		1BD91CC21FA1DB0300C3FD8F /* StockProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB41FA1DB0300C3FD8F /* StockProfit.swift */; };
+		1BD91CC31FA1DB0300C3FD8F /* StockPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB71FA1DB0300C3FD8F /* StockPriceService.swift */; };
+		1BD91CC41FA1DB0300C3FD8F /* StockProfitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB81FA1DB0300C3FD8F /* StockProfitService.swift */; };
+		1BD91CC51FA1DB0300C3FD8F /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CB91FA1DB0300C3FD8F /* StockService.swift */; };
+		1BD91CC61FA1DB0300C3FD8F /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CBB1FA1DB0300C3FD8F /* DateService.swift */; };
+		1BD91CC71FA1DB0300C3FD8F /* NumberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CBC1FA1DB0300C3FD8F /* NumberService.swift */; };
+		1BD91CCE1FA1EF0600C3FD8F /* StockListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CCD1FA1EF0600C3FD8F /* StockListPresenter.swift */; };
+		1BD91CD01FA1EF1600C3FD8F /* StockListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CCF1FA1EF1600C3FD8F /* StockListInteractor.swift */; };
+		1BD91CD21FA1EF3100C3FD8F /* StockListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CD11FA1EF3100C3FD8F /* StockListRouter.swift */; };
+		1BD91CD61FA1F88C00C3FD8F /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CD51FA1F88C00C3FD8F /* StockListView.swift */; };
+		1BD91CD81FA1F9B400C3FD8F /* StockListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CD71FA1F9B400C3FD8F /* StockListDataSource.swift */; };
+		1BD91CDA1FA1F9C000C3FD8F /* StockListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CD91FA1F9C000C3FD8F /* StockListDelegate.swift */; };
+		1BD91CDC1FA20F8F00C3FD8F /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CDB1FA20F8F00C3FD8F /* StockListCell.swift */; };
+		1BD91CDE1FA216FD00C3FD8F /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CDD1FA216FD00C3FD8F /* StockDetailView.swift */; };
+		1BD91CE01FA2172500C3FD8F /* StockDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CDF1FA2172500C3FD8F /* StockDetailPresenter.swift */; };
+		1BD91CE21FA2173200C3FD8F /* StockDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CE11FA2173200C3FD8F /* StockDetailInteractor.swift */; };
+		1BD91CE41FA2173D00C3FD8F /* StockDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91CE31FA2173D00C3FD8F /* StockDetailRouter.swift */; };
+		1DEA7498644EB34CE31CD529 /* Pods_TMEStockExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E842BFB54843EFF11874BAB0 /* Pods_TMEStockExchange.framework */; };
+		A300C0988B5FBC08C81D3FB2 /* Pods_TMEStockExchangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F716105868E6B5A44D222AE /* Pods_TMEStockExchangeTests.framework */; };
+		C9034E283C1DA4F185CAFC66 /* Pods_TMEStockExchangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F387110DF74E602C35F6A2B /* Pods_TMEStockExchangeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BD91C901FA1D88300C3FD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD91C731FA1D88200C3FD8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD91C7A1FA1D88200C3FD8F;
+			remoteInfo = TMEStockExchange;
+		};
+		1BD91C9B1FA1D88300C3FD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD91C731FA1D88200C3FD8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD91C7A1FA1D88200C3FD8F;
+			remoteInfo = TMEStockExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F387110DF74E602C35F6A2B /* Pods_TMEStockExchangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMEStockExchangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD91C7B1FA1D88200C3FD8F /* TMEStockExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMEStockExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD91C831FA1D88200C3FD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BD91C851FA1D88200C3FD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BD91C881FA1D88200C3FD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BD91C8A1FA1D88200C3FD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD91C8F1FA1D88300C3FD8F /* TMEStockExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMEStockExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD91C931FA1D88300C3FD8F /* TMEStockExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMEStockExchangeTests.swift; sourceTree = "<group>"; };
+		1BD91C951FA1D88300C3FD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD91C9A1FA1D88300C3FD8F /* TMEStockExchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMEStockExchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD91C9E1FA1D88300C3FD8F /* TMEStockExchangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMEStockExchangeUITests.swift; sourceTree = "<group>"; };
+		1BD91CA01FA1D88300C3FD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD91CAD1FA1DB0300C3FD8F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BD91CB01FA1DB0300C3FD8F /* StockManagerSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockManagerSDK.swift; sourceTree = "<group>"; };
+		1BD91CB21FA1DB0300C3FD8F /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		1BD91CB31FA1DB0300C3FD8F /* StockPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockPrice.swift; sourceTree = "<group>"; };
+		1BD91CB41FA1DB0300C3FD8F /* StockProfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockProfit.swift; sourceTree = "<group>"; };
+		1BD91CB71FA1DB0300C3FD8F /* StockPriceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockPriceService.swift; sourceTree = "<group>"; };
+		1BD91CB81FA1DB0300C3FD8F /* StockProfitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockProfitService.swift; sourceTree = "<group>"; };
+		1BD91CB91FA1DB0300C3FD8F /* StockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		1BD91CBB1FA1DB0300C3FD8F /* DateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		1BD91CBC1FA1DB0300C3FD8F /* NumberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberService.swift; sourceTree = "<group>"; };
+		1BD91CCD1FA1EF0600C3FD8F /* StockListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListPresenter.swift; sourceTree = "<group>"; };
+		1BD91CCF1FA1EF1600C3FD8F /* StockListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListInteractor.swift; sourceTree = "<group>"; };
+		1BD91CD11FA1EF3100C3FD8F /* StockListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListRouter.swift; sourceTree = "<group>"; };
+		1BD91CD51FA1F88C00C3FD8F /* StockListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		1BD91CD71FA1F9B400C3FD8F /* StockListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataSource.swift; sourceTree = "<group>"; };
+		1BD91CD91FA1F9C000C3FD8F /* StockListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDelegate.swift; sourceTree = "<group>"; };
+		1BD91CDB1FA20F8F00C3FD8F /* StockListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListCell.swift; sourceTree = "<group>"; };
+		1BD91CDD1FA216FD00C3FD8F /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
+		1BD91CDF1FA2172500C3FD8F /* StockDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailPresenter.swift; sourceTree = "<group>"; };
+		1BD91CE11FA2173200C3FD8F /* StockDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailInteractor.swift; sourceTree = "<group>"; };
+		1BD91CE31FA2173D00C3FD8F /* StockDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailRouter.swift; sourceTree = "<group>"; };
+		23B3B70DE6D512C2E3A7D1B4 /* Pods-TMEStockExchangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchangeUITests/Pods-TMEStockExchangeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F4808C51C3778F8E1DCFB4E /* Pods-TMEStockExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchange/Pods-TMEStockExchange.release.xcconfig"; sourceTree = "<group>"; };
+		37C4C7909F2EA03849A23B91 /* Pods-TMEStockExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchange/Pods-TMEStockExchange.debug.xcconfig"; sourceTree = "<group>"; };
+		624E953D692BE478A2059312 /* Pods-TMEStockExchangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchangeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchangeTests/Pods-TMEStockExchangeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F716105868E6B5A44D222AE /* Pods_TMEStockExchangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMEStockExchangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B0070D902173826ADFE93B /* Pods-TMEStockExchangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchangeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchangeTests/Pods-TMEStockExchangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D66AA9AD541A5262EC5B244F /* Pods-TMEStockExchangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMEStockExchangeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMEStockExchangeUITests/Pods-TMEStockExchangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E842BFB54843EFF11874BAB0 /* Pods_TMEStockExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMEStockExchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BD91C781FA1D88200C3FD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DEA7498644EB34CE31CD529 /* Pods_TMEStockExchange.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C8C1FA1D88300C3FD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A300C0988B5FBC08C81D3FB2 /* Pods_TMEStockExchangeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C971FA1D88300C3FD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9034E283C1DA4F185CAFC66 /* Pods_TMEStockExchangeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB9C73921EBD693D2C8AF7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E842BFB54843EFF11874BAB0 /* Pods_TMEStockExchange.framework */,
+				9F716105868E6B5A44D222AE /* Pods_TMEStockExchangeTests.framework */,
+				0F387110DF74E602C35F6A2B /* Pods_TMEStockExchangeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BD91C721FA1D88200C3FD8F = {
+			isa = PBXGroup;
+			children = (
+				1BD91C7D1FA1D88200C3FD8F /* TMEStockExchange */,
+				1BD91C921FA1D88300C3FD8F /* TMEStockExchangeTests */,
+				1BD91C9D1FA1D88300C3FD8F /* TMEStockExchangeUITests */,
+				1BD91C7C1FA1D88200C3FD8F /* Products */,
+				5CE4934903EAB63B6F45A680 /* Pods */,
+				0CB9C73921EBD693D2C8AF7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BD91C7C1FA1D88200C3FD8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91C7B1FA1D88200C3FD8F /* TMEStockExchange.app */,
+				1BD91C8F1FA1D88300C3FD8F /* TMEStockExchangeTests.xctest */,
+				1BD91C9A1FA1D88300C3FD8F /* TMEStockExchangeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BD91C7D1FA1D88200C3FD8F /* TMEStockExchange */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CAC1FA1DB0300C3FD8F /* application */,
+				1BD91CAF1FA1DB0300C3FD8F /* sdk */,
+				1BD91CB51FA1DB0300C3FD8F /* service */,
+				1BD91CB11FA1DB0300C3FD8F /* core */,
+				1BD91C821FA1D88200C3FD8F /* Main.storyboard */,
+				1BD91C851FA1D88200C3FD8F /* Assets.xcassets */,
+				1BD91C871FA1D88200C3FD8F /* LaunchScreen.storyboard */,
+				1BD91C8A1FA1D88200C3FD8F /* Info.plist */,
+			);
+			path = TMEStockExchange;
+			sourceTree = "<group>";
+		};
+		1BD91C921FA1D88300C3FD8F /* TMEStockExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91C931FA1D88300C3FD8F /* TMEStockExchangeTests.swift */,
+				1BD91C951FA1D88300C3FD8F /* Info.plist */,
+			);
+			path = TMEStockExchangeTests;
+			sourceTree = "<group>";
+		};
+		1BD91C9D1FA1D88300C3FD8F /* TMEStockExchangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91C9E1FA1D88300C3FD8F /* TMEStockExchangeUITests.swift */,
+				1BD91CA01FA1D88300C3FD8F /* Info.plist */,
+			);
+			path = TMEStockExchangeUITests;
+			sourceTree = "<group>";
+		};
+		1BD91CAC1FA1DB0300C3FD8F /* application */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CAD1FA1DB0300C3FD8F /* AppDelegate.swift */,
+				1BD91CC81FA1EED100C3FD8F /* Stock */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		1BD91CAF1FA1DB0300C3FD8F /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CB01FA1DB0300C3FD8F /* StockManagerSDK.swift */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		1BD91CB11FA1DB0300C3FD8F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CB21FA1DB0300C3FD8F /* Stock.swift */,
+				1BD91CB31FA1DB0300C3FD8F /* StockPrice.swift */,
+				1BD91CB41FA1DB0300C3FD8F /* StockProfit.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		1BD91CB51FA1DB0300C3FD8F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CB61FA1DB0300C3FD8F /* Stock */,
+				1BD91CBA1FA1DB0300C3FD8F /* Utilities */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		1BD91CB61FA1DB0300C3FD8F /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CB71FA1DB0300C3FD8F /* StockPriceService.swift */,
+				1BD91CB81FA1DB0300C3FD8F /* StockProfitService.swift */,
+				1BD91CB91FA1DB0300C3FD8F /* StockService.swift */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		1BD91CBA1FA1DB0300C3FD8F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CBB1FA1DB0300C3FD8F /* DateService.swift */,
+				1BD91CBC1FA1DB0300C3FD8F /* NumberService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1BD91CC81FA1EED100C3FD8F /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CCA1FA1EED100C3FD8F /* List */,
+				1BD91CC91FA1EED100C3FD8F /* Details */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		1BD91CC91FA1EED100C3FD8F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CDD1FA216FD00C3FD8F /* StockDetailView.swift */,
+				1BD91CDF1FA2172500C3FD8F /* StockDetailPresenter.swift */,
+				1BD91CE11FA2173200C3FD8F /* StockDetailInteractor.swift */,
+				1BD91CE31FA2173D00C3FD8F /* StockDetailRouter.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1BD91CCA1FA1EED100C3FD8F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CD41FA1F88C00C3FD8F /* View */,
+				1BD91CCD1FA1EF0600C3FD8F /* StockListPresenter.swift */,
+				1BD91CCF1FA1EF1600C3FD8F /* StockListInteractor.swift */,
+				1BD91CD11FA1EF3100C3FD8F /* StockListRouter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1BD91CD41FA1F88C00C3FD8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91CD51FA1F88C00C3FD8F /* StockListView.swift */,
+				1BD91CD71FA1F9B400C3FD8F /* StockListDataSource.swift */,
+				1BD91CD91FA1F9C000C3FD8F /* StockListDelegate.swift */,
+				1BD91CDB1FA20F8F00C3FD8F /* StockListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CE4934903EAB63B6F45A680 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C4C7909F2EA03849A23B91 /* Pods-TMEStockExchange.debug.xcconfig */,
+				2F4808C51C3778F8E1DCFB4E /* Pods-TMEStockExchange.release.xcconfig */,
+				C5B0070D902173826ADFE93B /* Pods-TMEStockExchangeTests.debug.xcconfig */,
+				624E953D692BE478A2059312 /* Pods-TMEStockExchangeTests.release.xcconfig */,
+				D66AA9AD541A5262EC5B244F /* Pods-TMEStockExchangeUITests.debug.xcconfig */,
+				23B3B70DE6D512C2E3A7D1B4 /* Pods-TMEStockExchangeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BD91C7A1FA1D88200C3FD8F /* TMEStockExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD91CA31FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchange" */;
+			buildPhases = (
+				C35402A6604AE81457EA93C9 /* [CP] Check Pods Manifest.lock */,
+				1BD91C771FA1D88200C3FD8F /* Sources */,
+				1BD91C781FA1D88200C3FD8F /* Frameworks */,
+				1BD91C791FA1D88200C3FD8F /* Resources */,
+				3A2C3FF1471F786898B2E53C /* [CP] Embed Pods Frameworks */,
+				90C3A2062EC87047A8B63914 /* [CP] Copy Pods Resources */,
+				1BD91CD31FA1F61B00C3FD8F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMEStockExchange;
+			productName = TMEStockExchange;
+			productReference = 1BD91C7B1FA1D88200C3FD8F /* TMEStockExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BD91C8E1FA1D88300C3FD8F /* TMEStockExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD91CA61FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchangeTests" */;
+			buildPhases = (
+				195D63721BA2020055BBD3F6 /* [CP] Check Pods Manifest.lock */,
+				1BD91C8B1FA1D88300C3FD8F /* Sources */,
+				1BD91C8C1FA1D88300C3FD8F /* Frameworks */,
+				1BD91C8D1FA1D88300C3FD8F /* Resources */,
+				632F4AEE09B9196234844194 /* [CP] Embed Pods Frameworks */,
+				9E4DF73B7C91237135A4C869 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD91C911FA1D88300C3FD8F /* PBXTargetDependency */,
+			);
+			name = TMEStockExchangeTests;
+			productName = TMEStockExchangeTests;
+			productReference = 1BD91C8F1FA1D88300C3FD8F /* TMEStockExchangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BD91C991FA1D88300C3FD8F /* TMEStockExchangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD91CA91FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchangeUITests" */;
+			buildPhases = (
+				4609283497C122DE8CC417A3 /* [CP] Check Pods Manifest.lock */,
+				1BD91C961FA1D88300C3FD8F /* Sources */,
+				1BD91C971FA1D88300C3FD8F /* Frameworks */,
+				1BD91C981FA1D88300C3FD8F /* Resources */,
+				097AD6BC7221C8B6A59483AE /* [CP] Embed Pods Frameworks */,
+				5F00DC922AB908EF2B0E20F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD91C9C1FA1D88300C3FD8F /* PBXTargetDependency */,
+			);
+			name = TMEStockExchangeUITests;
+			productName = TMEStockExchangeUITests;
+			productReference = 1BD91C9A1FA1D88300C3FD8F /* TMEStockExchangeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BD91C731FA1D88200C3FD8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "sagar kothari";
+				TargetAttributes = {
+					1BD91C7A1FA1D88200C3FD8F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					1BD91C8E1FA1D88300C3FD8F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BD91C7A1FA1D88200C3FD8F;
+					};
+					1BD91C991FA1D88300C3FD8F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BD91C7A1FA1D88200C3FD8F;
+					};
+				};
+			};
+			buildConfigurationList = 1BD91C761FA1D88200C3FD8F /* Build configuration list for PBXProject "TMEStockExchange" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BD91C721FA1D88200C3FD8F;
+			productRefGroup = 1BD91C7C1FA1D88200C3FD8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BD91C7A1FA1D88200C3FD8F /* TMEStockExchange */,
+				1BD91C8E1FA1D88300C3FD8F /* TMEStockExchangeTests */,
+				1BD91C991FA1D88300C3FD8F /* TMEStockExchangeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BD91C791FA1D88200C3FD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD91C891FA1D88200C3FD8F /* LaunchScreen.storyboard in Resources */,
+				1BD91C861FA1D88200C3FD8F /* Assets.xcassets in Resources */,
+				1BD91C841FA1D88200C3FD8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C8D1FA1D88300C3FD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C981FA1D88300C3FD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		097AD6BC7221C8B6A59483AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchangeUITests/Pods-TMEStockExchangeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		195D63721BA2020055BBD3F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BD91CD31FA1F61B00C3FD8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 63803c6f3bf4f797d2399001b4bc538964c4635d 4726fd7caeb2394665bef86a51a7a2f9513ac23f4d26a61da3cd694a52be2fb6";
+		};
+		3A2C3FF1471F786898B2E53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchange/Pods-TMEStockExchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4609283497C122DE8CC417A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F00DC922AB908EF2B0E20F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchangeUITests/Pods-TMEStockExchangeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632F4AEE09B9196234844194 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchangeTests/Pods-TMEStockExchangeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C3A2062EC87047A8B63914 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchange/Pods-TMEStockExchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4DF73B7C91237135A4C869 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMEStockExchangeTests/Pods-TMEStockExchangeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35402A6604AE81457EA93C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BD91C771FA1D88200C3FD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD91CC51FA1DB0300C3FD8F /* StockService.swift in Sources */,
+				1BD91CBD1FA1DB0300C3FD8F /* AppDelegate.swift in Sources */,
+				1BD91CE01FA2172500C3FD8F /* StockDetailPresenter.swift in Sources */,
+				1BD91CCE1FA1EF0600C3FD8F /* StockListPresenter.swift in Sources */,
+				1BD91CD61FA1F88C00C3FD8F /* StockListView.swift in Sources */,
+				1BD91CC31FA1DB0300C3FD8F /* StockPriceService.swift in Sources */,
+				1BD91CD21FA1EF3100C3FD8F /* StockListRouter.swift in Sources */,
+				1BD91CD01FA1EF1600C3FD8F /* StockListInteractor.swift in Sources */,
+				1BD91CE21FA2173200C3FD8F /* StockDetailInteractor.swift in Sources */,
+				1BD91CC71FA1DB0300C3FD8F /* NumberService.swift in Sources */,
+				1BD91CC21FA1DB0300C3FD8F /* StockProfit.swift in Sources */,
+				1BD91CE41FA2173D00C3FD8F /* StockDetailRouter.swift in Sources */,
+				1BD91CC41FA1DB0300C3FD8F /* StockProfitService.swift in Sources */,
+				1BD91CDC1FA20F8F00C3FD8F /* StockListCell.swift in Sources */,
+				1BD91CD81FA1F9B400C3FD8F /* StockListDataSource.swift in Sources */,
+				1BD91CC11FA1DB0300C3FD8F /* StockPrice.swift in Sources */,
+				1BD91CC01FA1DB0300C3FD8F /* Stock.swift in Sources */,
+				1BD91CDA1FA1F9C000C3FD8F /* StockListDelegate.swift in Sources */,
+				1BD91CBF1FA1DB0300C3FD8F /* StockManagerSDK.swift in Sources */,
+				1BD91CDE1FA216FD00C3FD8F /* StockDetailView.swift in Sources */,
+				1BD91CC61FA1DB0300C3FD8F /* DateService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C8B1FA1D88300C3FD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD91C941FA1D88300C3FD8F /* TMEStockExchangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD91C961FA1D88300C3FD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD91C9F1FA1D88300C3FD8F /* TMEStockExchangeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BD91C911FA1D88300C3FD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD91C7A1FA1D88200C3FD8F /* TMEStockExchange */;
+			targetProxy = 1BD91C901FA1D88300C3FD8F /* PBXContainerItemProxy */;
+		};
+		1BD91C9C1FA1D88300C3FD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD91C7A1FA1D88200C3FD8F /* TMEStockExchange */;
+			targetProxy = 1BD91C9B1FA1D88300C3FD8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BD91C821FA1D88200C3FD8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD91C831FA1D88200C3FD8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BD91C871FA1D88200C3FD8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD91C881FA1D88200C3FD8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BD91CA11FA1D88300C3FD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BD91CA21FA1D88300C3FD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BD91CA41FA1D88300C3FD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C4C7909F2EA03849A23B91 /* Pods-TMEStockExchange.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BD91CA51FA1D88300C3FD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4808C51C3778F8E1DCFB4E /* Pods-TMEStockExchange.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BD91CA71FA1D88300C3FD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B0070D902173826ADFE93B /* Pods-TMEStockExchangeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMEStockExchange.app/TMEStockExchange";
+			};
+			name = Debug;
+		};
+		1BD91CA81FA1D88300C3FD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624E953D692BE478A2059312 /* Pods-TMEStockExchangeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMEStockExchange.app/TMEStockExchange";
+			};
+			name = Release;
+		};
+		1BD91CAA1FA1D88300C3FD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66AA9AD541A5262EC5B244F /* Pods-TMEStockExchangeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMEStockExchange;
+			};
+			name = Debug;
+		};
+		1BD91CAB1FA1D88300C3FD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B3B70DE6D512C2E3A7D1B4 /* Pods-TMEStockExchangeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMEStockExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.TMEStockExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMEStockExchange;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BD91C761FA1D88200C3FD8F /* Build configuration list for PBXProject "TMEStockExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD91CA11FA1D88300C3FD8F /* Debug */,
+				1BD91CA21FA1D88300C3FD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD91CA31FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD91CA41FA1D88300C3FD8F /* Debug */,
+				1BD91CA51FA1D88300C3FD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD91CA61FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD91CA71FA1D88300C3FD8F /* Debug */,
+				1BD91CA81FA1D88300C3FD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD91CA91FA1D88300C3FD8F /* Build configuration list for PBXNativeTarget "TMEStockExchangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD91CAA1FA1D88300C3FD8F /* Debug */,
+				1BD91CAB1FA1D88300C3FD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BD91C731FA1D88200C3FD8F /* Project object */;
+}

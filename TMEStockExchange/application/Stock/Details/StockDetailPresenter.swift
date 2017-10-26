@@ -9,5 +9,11 @@
 import UIKit
 
 class StockDetailPresenter: NSObject {
+  weak var view: StockDetailView!
+  var interactor: StockDetailInteractor!
+  var router: StockDetailRouter!
+
+  func onViewLoad() {
+  }
 
 }
